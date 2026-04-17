@@ -1,6 +1,6 @@
 # sfBGT
 
-This repository now contains a paper-aligned implementation of `sfBGT` for multimodal brain network classification.
+This repository is for the paper "Joint Structural-Functional Brain Graph Transformer".
 
 # Overview
 
