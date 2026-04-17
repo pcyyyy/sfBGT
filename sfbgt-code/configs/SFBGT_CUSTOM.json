@@ -1,0 +1,42 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+
+    "model": "sfBGT",
+    "dataset": "SFBGT_CUSTOM",
+
+    "out_dir": "out",
+    "data_root": "data/sfbgt",
+
+    "params": {
+        "seed": 41,
+        "epochs": 200,
+        "batch_size": 16,
+        "init_lr": 0.001,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 20,
+        "min_lr": 1e-5,
+        "weight_decay": 5e-4,
+        "num_folds": 10,
+        "val_ratio": 0.1,
+        "print_epoch_interval": 5,
+        "max_time": 24
+    },
+
+    "net_params": {
+        "branch_hidden_dim": 64,
+        "branch_layers": 2,
+        "edge_relation_dim": 16,
+        "context_hidden_dim": 64,
+        "context_layers": 4,
+        "context_heads": 4,
+        "interaction_hidden_dim": 128,
+        "coupling_threshold": 0.2,
+        "functional_channel": 0,
+        "structural_channel": 1,
+        "readout": "sum",
+        "dropout": 0.1
+    }
+}
